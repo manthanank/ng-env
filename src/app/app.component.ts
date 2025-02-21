@@ -11,4 +11,8 @@ export class AppComponent {
   title = 'ng-env';
 
   protected readonly apiKey = environment.apiKey;
+
+  constructor() {
+    console.log(this.apiKey);
+  }
 }
