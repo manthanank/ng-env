@@ -13,6 +13,6 @@ export class AppComponent {
   protected readonly apiKey = environment.apiKey;
 
   constructor() {
-    console.log(this.apiKey);
+    fetch(environment.apiKey);
   }
 }
