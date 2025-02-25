@@ -5,14 +5,12 @@ import { environment } from '../environments/environment';
   selector: 'app-root',
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'ng-env';
 
   protected readonly apiKey = environment.apiKey;
 
-  constructor() {
-    console.log(fetch(environment.apiKey));
-  }
+  constructor() {}
 }
